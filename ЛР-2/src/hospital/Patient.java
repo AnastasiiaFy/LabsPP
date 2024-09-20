@@ -59,14 +59,14 @@ public class Patient  {
     }
 
     //Виведення інформації про пацієнта
-    public void displayInfo() {
-        System.out.println("\nID: " + id);
-        System.out.println("Прізвище: " + lastName);
-        System.out.println("Імʼя: " + firstName);
-        System.out.println("По батькові: " + middleName);
-        System.out.println("Адреса: " + address);
-        System.out.println("Номер телефону: " + phoneNum);
-        System.out.println("Номер медичної карти: " + medCardNumber);
-        System.out.println("Діагноз: " + diagnosis);
+    public String toString() {
+        return "\nID: " + id +
+                "\nПрізвище: " + lastName +
+                "\nІмʼя: " + firstName +
+                "\nПо батькові: " + middleName +
+                "\nАдреса: " + address +
+                "\nНомер телефону: " + phoneNum +
+                "\nНомер медичної карти: " + medCardNumber +
+                "\nДіагноз: " + diagnosis;
     }
 }

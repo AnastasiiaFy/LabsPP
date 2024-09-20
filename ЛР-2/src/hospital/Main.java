@@ -24,10 +24,27 @@ public class Main {
             String mName = scanner.nextLine();
             System.out.print("Адреса: ");
             String address = scanner.nextLine();
-            System.out.print("Номер телефону: ");
-            String phone = scanner.nextLine();
-            System.out.print("Номер медичної карти (4 цифри): ");
-            String medCardNum = scanner.nextLine();
+
+            String phone;
+            while (true){
+                System.out.print("Номер телефону: ");
+                String input = scanner.nextLine();
+                if (input.length() == 10 && input.chars().allMatch(Character::isDigit)) {
+                    phone = input;
+                    break;
+                }
+            }
+
+            String medCardNum;
+            while (true){
+                System.out.print("Номер медичної карти (4 цифри): ");
+                String input = scanner.nextLine();
+                if (input.length() == 4 && input.chars().allMatch(Character::isDigit)) {
+                    medCardNum = input;
+                    break;
+                }
+            }
+
             System.out.print("Діагноз: ");
             String diagnosis = scanner.nextLine();
 
@@ -57,7 +74,7 @@ public class Main {
                     System.out.println("\n\t-----Результати пошуку-----");
                     for (Patient patient : patients) {
                         if (patient.getDiagnosis().equals(diagnForSearch)) {
-                            patient.displayInfo();
+                            System.out.println(patient);
                         }
                     }
                     break;
@@ -72,7 +89,7 @@ public class Main {
                         String medCardNumber = patient.getMedCardNumber();
 
                         if (medCardNumber.compareTo(minCardNum) >= 0 && medCardNumber.compareTo(maxCardNum) <= 0) {
-                            patient.displayInfo();
+                            System.out.println(patient);
                         }
                     }
                     break;
@@ -84,13 +101,14 @@ public class Main {
                     System.out.println("\n\t-----Результати пошуку-----");
                     for (Patient patient : patients) {
                         if (patient.getPhoneNum().charAt(0) == digit.charAt(0)) {
-                            patient.displayInfo();
+                            System.out.println(patient);
                             count++;
                         }
                     }
                     System.out.println("\t\tКількість знайдених пацієнтів - " + count);
                     break;
                 case 'd':
+                    scanner.close();
                     System.exit(0);
             }
         } while (true);
