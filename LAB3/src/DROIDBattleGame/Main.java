@@ -1,9 +1,12 @@
 package DROIDBattleGame;
 
+import Droids.Droid;
+import Droids.Livermorium;
+import Droids.Wolfram;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -237,6 +240,7 @@ public class Main {
 
     //Метод для виведення результатіі дуелей з файлу
     private static void displayDuelResultsFromFile() {
+        Scanner fileScanner = null;
         try {
             File file = new File("duel_results.txt");
 
@@ -245,18 +249,17 @@ public class Main {
                 return;
             }
 
-            Scanner fileScanner = new Scanner(file);
+             fileScanner = new Scanner(file);
             System.out.println("|||\n|||\t\t----- Duel Results -----");
 
             while (fileScanner.hasNextLine()) {
                 String line = fileScanner.nextLine();
                 System.out.println("|||\t\t" + line);
             }
-
-            fileScanner.close();
         } catch (IOException e) {
             System.out.println("|||\t\tError reading duel results from file.");
+        } finally {
+            if (fileScanner != null) fileScanner.close();
         }
     }
-
 }
