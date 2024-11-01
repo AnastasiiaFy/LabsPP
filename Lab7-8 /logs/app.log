@@ -1,0 +1,77 @@
+2024-11-01 11:03:03 [main] INFO : Menu was shown
+2024-11-01 11:03:11 [main] INFO : Menu manager was called.
+2024-11-01 11:03:11 [main] INFO : The command to download appliances from file was called.
+2024-11-01 11:03:11 [main] INFO : Electrical appliances loaded from file.
+2024-11-01 11:03:12 [main] INFO : Menu manager was called.
+2024-11-01 11:03:12 [main] INFO : The command to show the list of appliances was called.
+2024-11-01 11:03:12 [main] INFO : List of all electrical appliances was shown
+2024-11-01 11:03:31 [main] INFO : Menu manager was called.
+2024-11-01 11:03:31 [main] INFO : The command to delete appliances was called.
+2024-11-01 11:03:31 [main] INFO : Menu manager was called.
+2024-11-01 11:03:31 [main] INFO : The command to show the list of appliances was called.
+2024-11-01 11:03:31 [main] INFO : List of all electrical appliances was shown
+2024-11-01 11:03:34 [main] INFO : Electrical appliance was removed from the list
+2024-11-01 11:03:36 [main] INFO : Menu manager was called.
+2024-11-01 11:03:36 [main] INFO : The command to add appliances was called.
+2024-11-01 11:06:27 [main] INFO : A new electrical appliance Мікрохвильова пічwas added to the list
+2024-11-01 11:06:37 [main] INFO : Menu manager was called.
+2024-11-01 11:06:37 [main] INFO : The command to turn on appliance was called.
+2024-11-01 11:06:37 [main] INFO : List of turned off appliances was shown
+2024-11-01 11:06:47 [main] INFO : The Холодильник was turned on
+2024-11-01 11:06:56 [main] INFO : Menu manager was called.
+2024-11-01 11:06:56 [main] INFO : The command to turn off appliance was called.
+2024-11-01 11:06:56 [main] INFO : List of turned on appliances was shown
+2024-11-01 11:07:05 [main] INFO : The Телевізор was turned off
+2024-11-01 11:07:11 [main] INFO : Menu manager was called.
+2024-11-01 11:07:11 [main] INFO : The command to sort appliances by power was called.
+2024-11-01 11:07:11 [main] INFO : List of all electrical appliances sorted by power was shown
+2024-11-01 11:07:17 [main] ERROR: Enter an invalid number: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947)
+	at java.base/java.util.Scanner.next(Scanner.java:1602)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221)
+	at PatternCommandOrg.Main.main(Main.java:30)
+2024-11-01 11:07:41 [main] INFO : Menu manager was called.
+2024-11-01 11:07:41 [main] INFO : The command to find appliances by range of parameters was called.
+2024-11-01 11:07:54 [main] INFO : The electrical appliances were found by name
+2024-11-01 11:07:58 [main] INFO : Menu manager was called.
+2024-11-01 11:07:58 [main] INFO : The command to find appliances by range of parameters was called.
+2024-11-01 11:08:19 [main] INFO : The electrical appliances were found by range of power
+2024-11-01 11:08:49 [main] INFO : Menu manager was called.
+2024-11-01 11:08:49 [main] INFO : The command to find appliances by range of parameters was called.
+2024-11-01 11:09:04 [main] INFO : The electrical appliances were found by range of price
+2024-11-01 11:09:15 [main] INFO : Menu manager was called.
+2024-11-01 11:09:15 [main] INFO : The command to calculate power consumption was called.
+2024-11-01 11:09:15 [main] INFO : The power consumption was calculated
+2024-11-01 11:09:38 [main] INFO : Menu manager was called.
+2024-11-01 11:09:38 [main] INFO : The command to calculate price of work appliances was called.
+2024-11-01 11:09:49 [main] INFO : The price of work turned on appliances was calculated
+2024-11-01 11:09:53 [main] INFO : Menu manager was called.
+2024-11-01 11:09:53 [main] INFO : The command to calculate price of work appliances was called.
+2024-11-01 11:09:55 [main] INFO : Menu manager was called.
+2024-11-01 11:09:55 [main] INFO : The command to show the list of appliances was called.
+2024-11-01 11:09:55 [main] INFO : List of all electrical appliances was shown
+2024-11-01 11:10:07 [main] INFO : The price of work selected appliances was calculated
+2024-11-01 11:10:11 [main] INFO : Menu manager was called.
+2024-11-01 11:10:11 [main] INFO : The command to write appliances in file was called.
+2024-11-01 11:10:11 [main] INFO : Appliances was written to file.
+2024-11-01 11:10:11 [main] INFO : The program completed
+2024-11-01 11:11:43 [main] INFO : Menu was shown
+2024-11-01 11:11:48 [main] INFO : Menu manager was called.
+2024-11-01 11:11:48 [main] INFO : The command to download appliances from file was called.
+2024-11-01 11:11:48 [main] INFO : Electrical appliances loaded from file.
+2024-11-01 11:12:02 [main] INFO : Menu manager was called.
+2024-11-01 11:12:02 [main] INFO : The command to delete appliances was called.
+2024-11-01 11:12:02 [main] INFO : Menu manager was called.
+2024-11-01 11:12:02 [main] INFO : The command to show the list of appliances was called.
+2024-11-01 11:12:02 [main] INFO : List of all electrical appliances was shown
+2024-11-01 11:12:04 [main] WARN : User selected an invalid index to delete appliance.
+2024-11-01 11:12:10 [main] INFO : Electrical appliance was removed from the list
+2024-11-01 11:12:12 [main] ERROR: Enter an invalid number: null
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:947)
+	at java.base/java.util.Scanner.next(Scanner.java:1602)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221)
+	at PatternCommandOrg.Main.main(Main.java:30)
