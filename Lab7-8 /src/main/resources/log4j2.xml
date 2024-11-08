@@ -9,7 +9,7 @@
           smtpHost="smtp.gmail.com"
           smtpPort="465"
           smtpUsername="anastasiia.fylypiv.oi.2023@lpnu.ua"
-          smtpPassword="yqkwehxsrrfbmmlg"
+          smtpPassword="----------------"
           smtpProtocol="smtps"
           bufferSize="1"
           ignoreExceptions="false">
